@@ -12,9 +12,12 @@ function Handler() {
       setText("Grt work :⛹️‍♀️🤟")
     }
   return (
+    <>
+    <h2>Handler in React</h2>
     <div>
         <button  style={{backgroundColor:color}} onDoubleClick={handledoubleclick} onClick={handleClick}>{text}</button>
     </div>
+    </>
   )
 }
 

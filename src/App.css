@@ -55,13 +55,11 @@ ul{
   font-size: large;
   text-transform: capitalize;
 }
-li>Link{
-  color: white;
-  font-size: large;
-  text-transform: capitalize;
-}
 #color{
   color: white;
   font-size: large;
   text-transform: capitalize;
+}
+h2{
+  background-color: yellow;
 }

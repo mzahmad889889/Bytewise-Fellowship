@@ -14,7 +14,6 @@ function App() {
       <BrowserRouter>
       <Routes_concept/>
       <h1>Bytewise Fellowshp tasks</h1>
-      <h2>Handler in React</h2>
       <Routes>
         <Route  path='/' element={<Handler/>}/>
         <Route  path='/about' element={<Conditional_Render/>}/>

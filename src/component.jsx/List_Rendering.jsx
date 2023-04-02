@@ -25,7 +25,7 @@ function List_Rendering() {
   }, []);
   return (
     <div>
-      <h3>Renering list in React</h3>
+      <h2>Renering list in React</h2>
         {users.map(user => {
            return(
         <div className='item' key={user.id}>
@@ -37,7 +37,7 @@ function List_Rendering() {
        {products.map(product => {
          return (
             <div key={product.id}>
-               <h2 className="title">{product.title}</h2>
+               <h3 className="title">{product.title}</h3>
                <p className="desccription">{product.description}</p>
                <h3 className="price">{product.price}</h3>  
             </div>

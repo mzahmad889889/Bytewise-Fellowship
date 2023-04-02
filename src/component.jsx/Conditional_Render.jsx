@@ -17,13 +17,14 @@ function Conditional_Render() {
    
   return (
     <>
+    <h2>Conditional Rendering</h2>
     <h3>{count}</h3>
     <div id="button">
        <button style={{backgroundColor:'blue'}} onClick={handleClick}>+</button>
        <button style={{backgroundColor:'red'}}onClick={NegativeHandle}>-</button>
     </div>
     
-    <h1>{person && person.personName.first}</h1>
+    <h3>{person && person.personName.first}</h3>
     
     </>
   )
