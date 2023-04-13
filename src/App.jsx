@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import React,{ createContext } from 'react'
 import './App.css'
-import Handler from './component.jsx/Handler'
-import Routes_concept from './component.jsx/Routes_concept'
-import Conditional_Render from './component.jsx/Conditional_Render'
-import List_Rendering from './component.jsx/List_Rendering'
+import Handler from './component/Handler'
+import Routes_concept from './component/Routes_concept'
+import Conditional_Render from './component/Conditional_Render'
+import List_Rendering from './component/List_Rendering'
+import GlobalContext from './hooks/GlobalContext'
 import { BrowserRouter,Routes, Route} from 'react-router-dom';
-function App() {
-  const [count, setCount] = useState(0)
+export const FirstName = createContext();
+export const SecondName = createContext();
 
+function App() {
   return (
+    <>
     <div className="App">
-      <>
       <BrowserRouter>
       <Routes_concept/>
       <h1>Bytewise Fellowshp tasks</h1>
@@ -18,10 +20,15 @@ function App() {
         <Route  path='/' element={<Handler/>}/>
         <Route  path='/about' element={<Conditional_Render/>}/>
       </Routes>
-      <List_Rendering/>
-      </BrowserRouter> 
-      </>
+      </BrowserRouter>
     </div>
+    <FirstName.Provider value="Muhammad">
+      <SecondName.Provider value="Zubair Ahmad">
+        <GlobalContext/>
+      </SecondName.Provider>   
+    </FirstName.Provider>
+   <List_Rendering/>
+   </>
   )
 }
 
