@@ -6,6 +6,7 @@ import Conditional_Render from './component/Conditional_Render'
 import List_Rendering from './component/List_Rendering'
 import GlobalContext from './hooks/GlobalContext'
 import { BrowserRouter,Routes, Route} from 'react-router-dom';
+import UseOfRef from './hooks/UseOfRef'
 export const FirstName = createContext();
 export const SecondName = createContext();
 
@@ -22,6 +23,7 @@ function App() {
       </Routes>
       </BrowserRouter>
     </div>
+    <UseOfRef/>
     <FirstName.Provider value="Muhammad">
       <SecondName.Provider value="Zubair Ahmad">
         <GlobalContext/>
