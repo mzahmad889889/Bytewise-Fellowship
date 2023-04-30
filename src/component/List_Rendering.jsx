@@ -42,7 +42,8 @@ function List_Rendering() {
                <h3 className="price">{product.price}</h3>  
             </div>
           );
-      })} 
+      })}
+      <h2>UseMemo </h2> 
     </div>
   )
 }

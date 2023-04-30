@@ -20,7 +20,7 @@ function App() {
       <h1>Bytewise Fellowshp tasks</h1>
       <Routes>
         <Route  path='/' element={<Handler/>}/>
-        <Route  path='/about' element={<Conditional_Render/>}/>
+        <Route  path='/Bytewise-Fellowship/about' element={<Conditional_Render/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -6,7 +6,7 @@ function Routes_concept() {
         <nav>
           <ul>
             <li><Link to='/'  id='color'>Home</Link></li>
-            <li ><Link to='/about' id='color'>About</Link></li>
+            <li ><Link to='/Bytewise-Fellowship/about' id='color'>About</Link></li>
             </ul>
         </nav>
     </div>

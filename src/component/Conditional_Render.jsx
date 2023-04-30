@@ -1,6 +1,8 @@
 import React, {useState, useContext} from 'react'
 import { useCounter } from '../hooks/CustomHooks';
 import Name from '../hooks/UseContext';
+import ProductList from '../hooks/UseMemoHook';
+import Post from './Post';
 function Conditional_Render() {
   const {value, reset, decrease, increase} = useCounter()
   const [count, setCount] = useState(0);
@@ -13,13 +15,16 @@ function Conditional_Render() {
       return setCount(0);
     }
   }
-  let person;
- 
-  person = {personName:{first:'Muhammad zubair', last:'Khan'} };
-  const {firstName, lastName} = useContext(Name)
+  let person = {personName:{first:'Muhammad zubair', last:'Khan'} };
+  const context = useContext(Name)
+  const  {firstName, lastName} = context || {};
   return (
     <>
     <h5>My name is {firstName} and my Last name is {lastName}</h5>
+    <h4>UseMemoHook in React</h4>
+    <ProductList/>
+    <h4>Use Reducer hooks in React</h4>
+    <Post/>
     <h2>Conditional Rendering</h2>
     <h3>{count}</h3>
     <div id="button">

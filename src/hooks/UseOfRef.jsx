@@ -16,9 +16,7 @@ function UseOfRef() {
     <div>
         <input ref={Render} value={names} onChange={e =>setNames(e.target.value)}/><br></br>
         <p>Your text is rendering ({names}) and rendering the prev text of your input ({Render.current})</p>
-        {/* <button>Focus</button> */}
-      
-      
+        {/* <button>Focus</button> */}      
     </div>
   )
 }
