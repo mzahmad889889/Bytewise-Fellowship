@@ -25,7 +25,7 @@ function List_Rendering() {
   }, []);
   return (
     <div>
-      <h2>Renering list in React</h2>
+      <h2>Rendering list in React</h2>
         {users.map(user => {
            return(
         <div className='item' key={user.id}>

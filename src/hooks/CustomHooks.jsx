@@ -12,6 +12,6 @@ export const useCounter  = () => {
     const reset = () => {
         setValue(0);
     }
-   return {value, reset, decrease, increase }; 
+   return [value, reset, decrease, increase ]; 
    
 }

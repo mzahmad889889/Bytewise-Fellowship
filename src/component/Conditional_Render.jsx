@@ -4,7 +4,7 @@ import Name from '../hooks/UseContext';
 import ProductList from '../hooks/UseMemoHook';
 import Post from './Post';
 function Conditional_Render() {
-  const {value, reset, decrease, increase} = useCounter()
+  const [values, resets, decreases, increases] = useCounter()
   const [count, setCount] = useState(0);
   const handleClick = () => {
     setCount(count+1);
@@ -32,10 +32,10 @@ function Conditional_Render() {
        <button style={{backgroundColor:'red'}}onClick={NegativeHandle}>-</button>
     </div>
     <h3>{person && person.personName.first}</h3>
-    <button onClick={increase}>Increase</button>
-    <div>{value}</div>
-    <button onClick={decrease}>Decrease</button><br/>
-    <button onClick={reset}>Reset</button>
+    <button onClick={increases}>Increase</button>
+    <div>{values}</div>
+    <button onClick={decreases}>Decrease</button><br/>
+    <button onClick={resets}>Reset</button>
     
     
     </>
